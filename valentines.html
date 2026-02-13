@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Be My Valentine 💖</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff9a9e, #fecfef);
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .card {
+            margin-top: 120px;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #d00000;
+        }
+
+        p {
+            font-size: 20px;
+            color: #6a040f;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 20px;
+        }
+
+        #yesBtn {
+            background-color: #ff4d6d;
+            color: white;
+        }
+
+        #noBtn {
+            background-color: #6c757d;
+            color: white;
+            position: absolute;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>Will You Be My Valentine? 🌹</h1>
+        <p>From the moment I met you, my world changed. 💕</p>
+        <p>So… will you make this Valentine's Day unforgettable with me?</p>
+
+        <button id="yesBtn" onclick="yesClicked()">YES 💖</button>
+        <button id="noBtn" onmouseover="moveButton()">NO 😏</button>
+    </div>
+
+    <script>
+        function yesClicked() {
+            alert("YAYYY!! 💕 You just made me the happiest person alive! 🌹");
+            
+            // Replace with your custom link
+            window.location.href = "https://yourlinkhere.com";
+        }
+
+        function moveButton() {
+            var button = document.getElementById("noBtn");
+            var x = Math.random() * window.innerWidth;
+            var y = Math.random() * window.innerHeight;
+
+            button.style.left = x + "px";
+            button.style.top = y + "px";
+        }
+    </script>
+
+</body>
+</html>
